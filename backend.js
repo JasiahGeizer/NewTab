@@ -2,11 +2,6 @@
 
 window.onload = function() {startTime()};
 
-
-//document.getElementById("textdata").addEventListener("input", localSave());
-
-
-
 function localSave(){
 	var textToSave2 = document.getElementById("textdata").value;
 	textToSave2 = textToSave2.replace(/([^\r])\n/g, "$1\r\n");
@@ -48,8 +43,6 @@ function startTime() {
 	document.getElementById("searchBar").oninput = function() {quickcalc()};
 
 	document.getElementById("searchBar").onkeyup = function() {searchit()};
-
-	
 
 	now = new Date();
 		realtime = new Intl.DateTimeFormat('default',

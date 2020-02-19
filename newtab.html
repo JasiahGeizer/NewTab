@@ -1,13 +1,4 @@
 <!DOCTYPE html>
-<!-- 
-	To Do:
-		- Style Drums as their instruments
-		- Position into real positions
-		- Drag to change positions
-		- animate on keypress and mouse down
-		- change from mouse up to mouse down
-
--->
 <html>
 	<head>
 		<script src="backend.js"></script>
@@ -27,44 +18,44 @@
 			}			
 			.grouped{
 				position: relative;
-				background: #3a3a3a70;
+				background: #2f2f2f80;
 				backdrop-filter:blur(7px);
 				width: 1080px;
 				height: 850px;
 				top: 60px;
 				margin: 0 auto;
 				border-radius: 20px;
-				box-shadow: 0px 2px 13px #252525;	
+				box-shadow: 0px 2px 20px #000000;	
 				color: white;		
 			}
-			.drumpad{
+			.linkButtons{
 				padding: 2px;
 				font-size: 14px;
-				box-shadow: 0px 3px 3px #252525;
+				box-shadow: 0px 3px 3px #131313;
 				text-align: center;
 				width: 75px;
 				height: 45px;
 				line-height: 45px;
-				background-color: #353535;
+				background-color: #2d2d2d;
     			border: none; 
     			position: absolute;
     			border-radius: 10px;
 			}
-			.drumpad:active{
+			.linkButtons:active{
 				box-shadow: inset 0px 3px 3px black;
 			}
 			textarea{
 				margin: 0 auto;
-			    padding: 30px; 
+			    padding: 20px; 
 			    margin-top: 25px;
 			    list-style-type: none;
 			    resize:none;
 			    display:block;
 			    position: relative;
 			    
-			    height: 400px;
-			    width: 290px;
-			    background: #353535;
+			    height: 420px;
+			    width: 310px;
+			    background: #2d2d2d;
 
 			    font-family: monospace;
 			    font-size: 14px;
@@ -72,7 +63,7 @@
 			    left:345px;
 			    top:40px;
 			    border:0px solid black;
-			    /*box-shadow: 0px 0px 10px #353535;*/
+			    /*box-shadow: 0px 0px 10px #2d2d2d;*/
 			}
 			textarea:focus{
 				outline:0px;
@@ -85,8 +76,8 @@
 				position: absolute;
 				right:20px;
 			    top:575px;
-			    /*box-shadow: 0px 0px 10px #353535;*/
-			    background: #353535;
+			    /*box-shadow: 0px 0px 10px #2d2d2d;*/
+			    background: #2d2d2d;
 			    border: 0px;
 			    font-size: 14px;
 			}
@@ -102,11 +93,9 @@
 				outline: 0px;
 				border:0px;
 				background: #575757;
-				box-shadow: inset -5px 0px black !important;
 			}
 		</style>
 	</head>
-
 
 	<body>
 		New Tab
@@ -120,18 +109,18 @@
 			<input id="searchBar" type="text" class="searchbar" value="Search:">
 			<div id="quickresults" class="searchbar" style="background:#00ffff00;top:605px;box-shadow: 0px 0px black;font-size: 14px;color: white;"></div>
 
-			<div id="1" class="drumpad" style="bottom: 170px;right: 290px;"onclick="">reddit</div>
-			<div id="2" class="drumpad" style="bottom: 170px;right: 200px;">twitter</div>
-			<div id="3" class="drumpad" style="bottom: 170px;right: 110px;">youtube</div>
-			<div id="4" class="drumpad" style="bottom: 170px;right: 20px;">drive</div>
-			<div id="5" class="drumpad" style="bottom: 110px;right: 290px;">gmail</div>
-			<div id="6" class="drumpad" style="bottom: 110px;right: 200px;">fb chat</div>
-			<div id="7" class="drumpad" style="bottom: 110px;right: 110px;">github</div>
-			<div id="8" class="drumpad" style="bottom: 110px;right: 20px;">books</div>
+			<div id="1" class="linkButtons" style="bottom: 170px;right: 290px;"onclick="">reddit</div>
+			<div id="2" class="linkButtons" style="bottom: 170px;right: 200px;">twitter</div>
+			<div id="3" class="linkButtons" style="bottom: 170px;right: 110px;">youtube</div>
+			<div id="4" class="linkButtons" style="bottom: 170px;right: 20px;">drive</div>
+			<div id="5" class="linkButtons" style="bottom: 110px;right: 290px;">gmail</div>
+			<div id="6" class="linkButtons" style="bottom: 110px;right: 200px;">fb chat</div>
+			<div id="7" class="linkButtons" style="bottom: 110px;right: 110px;">github</div>
+			<div id="8" class="linkButtons" style="bottom: 110px;right: 20px;">books</div>
 
 			
-			<div class="drumpad" id="txt" style="bottom: 30px;right: 200px;width:165px; background: #35353500;box-shadow: 0px 0px white;">10:30pm</div>
-			<div id="9" class="drumpad" style="bottom: 30px;right: 20px;width:165px;background: #e91e63;color:#353535;">launch jasiah.dev</div>
+			<div class="linkButtons" id="txt" style="bottom: 30px;right: 200px;width:165px; background: #2d2d2d00;box-shadow: 0px 0px white;">00:00pm</div>
+			<div id="9" class="linkButtons" style="bottom: 30px;right: 20px;width:165px;background: #e91e63;color:#2d2d2d;">launch jasiah.dev</div>
 
 			<iframe id="myFrame" src="https://siiimple.com/"></iframe>
 
@@ -142,10 +131,5 @@
 				https://www.redditp.com/r/design
 			-->
 		</div>	
-
-		
-
 	</body>
-
-	
 </html>
