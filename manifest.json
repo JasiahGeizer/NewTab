@@ -1,0 +1,10 @@
+{
+	"manifest_version": 2,
+    "name": "Jasiah's New Tab",
+    "description": "Jasiah's New Tab Page",
+    "version": "0.1",
+    "chrome_url_overrides" : {
+        "newtab": "newtab.html"
+    }
+    
+}
